@@ -1,11 +1,63 @@
 
-const Navbar = () => {
+const Navbar = ({navSection, setNavSection}) => {
+
+    let background = '';
+    let borderColor = '';
+    let color = '';
+
+    if (navSection === 'home') {
+        background = 'yellow';
+        borderColor = 'yellow-border';
+        color = 'yellow-text';
+    } else if (navSection === 'projects') {
+        background = 'red';
+        borderColor = 'red-border';
+        color = 'red-text';
+    } else {
+        background = 'turquoise';
+        borderColor = 'turquoise-border';
+        color = 'turquoise-text';
+    }
+
     return (
         <nav>
             <ul>
-                <li><a href="#home">Home</a><div className="inner-nav-box"></div></li>
-                <li><a href="#projects">Projects</a><div className="inner-nav-box"></div></li>
-                <li><a href="#contact">Contact</a><div className="inner-nav-box"></div></li>
+                <li 
+                    onClick={() => setNavSection('home')}
+                    className={`${navSection == 'home' ? borderColor : ''}`}    
+                >
+                    <a 
+                        href="#home"
+                        className={`${navSection == 'home' ? color : ''}`} 
+                    >
+                        Home
+                    </a>
+                    <div className={`inner-nav-box ${navSection == 'home' ? background : ''}`}></div>
+                </li>
+                <li 
+                    onClick={() => setNavSection('projects')}
+                    className={`${navSection == 'projects' ? borderColor : ''}`}    
+                >
+                    <a 
+                        href="#projects"
+                        className={`${navSection == 'projects' ? color : ''}`} 
+                    >
+                        Projects
+                    </a>
+                    <div className={`inner-nav-box ${navSection == 'projects' ? background : ''}`}></div>
+                </li>
+                <li 
+                    onClick={() => setNavSection('contact')}
+                    className={`${navSection == 'contact' ? borderColor : ''}`}    
+                >
+                    <a 
+                        href="#contact"
+                        className={`${navSection == 'contact' ? color : ''}`} 
+                    >
+                        Contact
+                    </a>
+                    <div className={`inner-nav-box ${navSection == 'contact' ? background : ''}`}></div>
+                </li>
             </ul>
         </nav>
     )
