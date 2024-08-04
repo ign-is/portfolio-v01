@@ -3,23 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
+import DecorativeElements from './components/DecorativeElements'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [navSection, setNavSection] = useState('home')
+  console.log(navSection);
 
   return (
     <div className='container-dots'>
-      <Navbar />
+      <DecorativeElements navSection={navSection} />
+      <Navbar navSection={navSection} setNavSection={setNavSection}/>
       <Header />
-      <div className="bar bar-right"></div>
-      <div className="bar bar-bottom"></div>
-      <div className="bar bar-top-right"></div>
-      <div className="bar bar-top-left"></div>
-      <div className="box box-top-left"></div>
-      <div className="box box-top-right"></div>
-      <div className="box box-bottom-left"></div>
-      <div className="box box-bottom-right"></div>
+
       
     </div>
   )
