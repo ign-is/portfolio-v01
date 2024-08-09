@@ -38,7 +38,8 @@ export const PROJECTS = [
     },
     {
         image: anime,
-        technologies: ['Next.js', 'Tailwind', 'Framer Motion']
+        technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
+        description: 'Modern Next 14 server side app to explore animes with server actions, infinite scroll & Framer Motion animations.'
     },
     {
         image: blogr,
@@ -46,19 +47,23 @@ export const PROJECTS = [
     },
     {
         image: brain,
-        technologies: ['React', 'Tailwind']
+        technologies: ['React', 'Tailwind'],
+        description: 'Futuristic fully responsive website with modern UI/UX, parallax effects and bento box layouts.'
     },
     {
         image: clock,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Digital clock in Neumorphism design style with dark mode included.'
     },
     {
         image: coffe,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+        description: 'Coffee shop menu with a touch of CSS art.'
     },
     {
         image: domTodo,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Photorealistic to-do device'
     },
     {
         image: easybank,
@@ -70,11 +75,13 @@ export const PROJECTS = [
     },
     {
         image: flexBox,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+        description: 'Handy technical documentation page filled with custom CSS made graphical examples to understand Flexbox properties.'
     },
     {
         image: formSpace,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+        description: 'Survey form for a space tourism company.'
     },
     {
         image: iCodeThis,
@@ -94,7 +101,8 @@ export const PROJECTS = [
     },
     {
         image: nikeThree,
-        technologies: ['React', 'Tailwind']
+        technologies: ['React', 'Tailwind'],
+        description: 'Nike landing page showcasing products.'
     },
     {
         image: product,
@@ -106,19 +114,23 @@ export const PROJECTS = [
     },
     {
         image: randomColor,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Random hexadecimal color generator with a cool button'
     },
     {
         image: randomQuotes,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Stoic philosophers random quotes generator with a beautiful background architecture.'
     },
     {
         image: rangeColor,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Photorealistic CSS Art with RGB range color generator functionality.'
     },
     {
         image: restaurantMin,
-        technologies: ['React', 'Tailwind', 'Framer Motion']
+        technologies: ['React', 'Tailwind', 'Framer Motion'],
+        description: 'Modern restaurant landing page'
     },
     {
         image: result,
@@ -146,15 +158,18 @@ export const PROJECTS = [
     },
     {
         image: travelOne,
-        technologies: ['Next.js', 'Tailwind']
+        technologies: ['Next.js', 'Tailwind', 'TypeScript'],
+        description: 'Fully responsive travel and camping landing page.'
     },
     {
         image: tribu,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+        description: 'Marcus Aurelius tribute page'
     },
     {
         image: vercel,
-        technologies: ['Next.js','TypeScript']
+        technologies: ['Next.js','TypeScript'],
+        description: 'Full-stack dashboard web application form the official Next.js documentation'
     }
 ]
 
