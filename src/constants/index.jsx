@@ -34,7 +34,9 @@ import vercel from '../assets/vercel.jpg'
 export const PROJECTS = [
     {
         image: advice,
-        technologies: ['React']
+        technologies: ['React'],
+
+        title: 'Advice generator app'
     },
     {
         image: anime,
@@ -43,7 +45,9 @@ export const PROJECTS = [
     },
     {
         image: blogr,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'Blogr landing page'
     },
     {
         image: brain,
@@ -63,15 +67,20 @@ export const PROJECTS = [
     {
         image: domTodo,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Photorealistic to-do device'
+        description: 'Photorealistic to-do device',
+        title: 'DOM To-do'
     },
     {
         image: easybank,
-        technologies: ['React']
+        technologies: ['React'],
+
+        title: 'Easybank landing page'
     },
     {
         image: expenses,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'Expenses chart component'
     },
     {
         image: flexBox,
@@ -81,51 +90,68 @@ export const PROJECTS = [
     {
         image: formSpace,
         technologies: ['HTML', 'CSS'],
-        description: 'Survey form for a space tourism company.'
+        description: 'Survey form for a space tourism company.',
+        title: 'Space Travel Form'
     },
     {
         image: iCodeThis,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: '166 front-end projects'
     },
     {
         image: news,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'News homepage'
     },
     {
         image: newsletter,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'Newsletter sign-up form'
     },
     {
         image: nft,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+
+        title: 'NFT preview card'
     },
     {
         image: nikeThree,
         technologies: ['React', 'Tailwind'],
-        description: 'Nike landing page showcasing products.'
+        description: 'Nike landing page showcasing products.',
+        title: 'Nike landing'
     },
     {
         image: product,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+
+        title: 'Product preview card'
     },
     {
         image: qr,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+
+        title: 'QR code'
     },
     {
         image: randomColor,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Random hexadecimal color generator with a cool button'
+        description: 'Random hexadecimal color generator with a cool button',
+        title: 'Random color generator'
     },
     {
         image: randomQuotes,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Stoic philosophers random quotes generator with a beautiful background architecture.'
+        description: 'Stoic philosophers random quotes generator with a beautiful background architecture.',
+        title: 'Quotes generator'
     },
     {
         image: rangeColor,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Photorealistic CSS Art with RGB range color generator functionality.'
+        description: 'Photorealistic CSS Art with RGB range color generator functionality.',
+        title: 'RGB color picker'
     },
     {
         image: restaurantMin,
@@ -134,27 +160,39 @@ export const PROJECTS = [
     },
     {
         image: result,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'Results summary component'
     },
     {
         image: room,
-        technologies: ['React']
+        technologies: ['React'],
+
+        title: 'Room homepage'
     },
     {
         image: socialProof,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+
+        title: 'Social proof section'
     },
     {
         image: social,
-        technologies: ['HTML', 'CSS', 'JavaScript']
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+
+        title: 'Social media dashboard with theme switcher'
     },
     {
         image: stats,
-        technologies: ['HTML', 'CSS']
+        technologies: ['HTML', 'CSS'],
+
+        title: 'Stats preview card'
     },
     {
         image: timeTracker,
-        technologies: ['React']
+        technologies: ['React'],
+
+        title: 'Time tracking dashboard'
     },
     {
         image: travelOne,

@@ -4,6 +4,9 @@ import { RiCss3Fill } from "react-icons/ri";
 import { RiJavascriptLine } from "react-icons/ri";
 import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+
+{/* <TbBrandTypescript /> */}
 
 const Cards = () => {
     return (
