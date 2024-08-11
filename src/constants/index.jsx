@@ -41,7 +41,8 @@ export const PROJECTS = [
     {
         image: anime,
         technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
-        description: 'Modern Next 14 server side app to explore animes with server actions, infinite scroll & Framer Motion animations.'
+        description: 'Modern Next 14 server side app to explore animes with server actions, infinite scroll & Framer Motion animations.',
+        title: 'Best Animes'
     },
     {
         image: blogr,
@@ -52,17 +53,20 @@ export const PROJECTS = [
     {
         image: brain,
         technologies: ['React', 'Tailwind'],
-        description: 'Futuristic fully responsive website with modern UI/UX, parallax effects and bento box layouts.'
+        description: 'Futuristic fully responsive website with modern UI/UX, parallax effects and bento box layouts.',
+        title: 'Brainwave'
     },
     {
         image: clock,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Digital clock in Neumorphism design style with dark mode included.'
+        description: 'Digital clock in Neumorphism design style with dark mode included.',
+        title: 'Neumorphism Clock'
     },
     {
         image: coffe,
         technologies: ['HTML', 'CSS'],
-        description: 'Coffee shop menu with a touch of CSS art.'
+        description: 'Coffee shop menu with a touch of CSS art.',
+        title: 'Coffee Menu'
     },
     {
         image: domTodo,
@@ -85,7 +89,8 @@ export const PROJECTS = [
     {
         image: flexBox,
         technologies: ['HTML', 'CSS'],
-        description: 'Handy technical documentation page filled with custom CSS made graphical examples to understand Flexbox properties.'
+        description: 'Handy technical documentation page filled with custom CSS made graphical examples to understand Flexbox properties.',
+        title: 'Flexbox Documentation'
     },
     {
         image: formSpace,
@@ -156,7 +161,8 @@ export const PROJECTS = [
     {
         image: restaurantMin,
         technologies: ['React', 'Tailwind', 'Framer Motion'],
-        description: 'Modern restaurant landing page'
+        description: 'Modern restaurant landing page',
+        title: 'Restaurant'
     },
     {
         image: result,
@@ -197,17 +203,20 @@ export const PROJECTS = [
     {
         image: travelOne,
         technologies: ['Next.js', 'Tailwind', 'TypeScript'],
-        description: 'Fully responsive travel and camping landing page.'
+        description: 'Fully responsive travel and camping landing page.',
+        title: ' Travel App'
     },
     {
         image: tribu,
         technologies: ['HTML', 'CSS'],
-        description: 'Marcus Aurelius tribute page'
+        description: 'Marcus Aurelius tribute page',
+        title: 'Tribute Page'
     },
     {
         image: vercel,
         technologies: ['Next.js','TypeScript'],
-        description: 'Full-stack dashboard web application form the official Next.js documentation'
+        description: 'Full-stack dashboard web application form the official Next.js documentation',
+        title: 'Vercel Official Project'
     }
 ]
 
