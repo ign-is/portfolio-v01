@@ -35,7 +35,7 @@ export const PROJECTS = [
     {
         image: advice,
         technologies: ['React'],
-
+        description: 'Click the dice to generate a new advice.',
         title: 'Advice generator app'
     },
     {
@@ -47,7 +47,7 @@ export const PROJECTS = [
     {
         image: blogr,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
+        description: 'A modern blog publishing platform',
         title: 'Blogr landing page'
     },
     {
@@ -77,13 +77,13 @@ export const PROJECTS = [
     {
         image: easybank,
         technologies: ['React'],
-
+        description: 'Next generation digital banking.',
         title: 'Easybank landing page'
     },
     {
         image: expenses,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
+        description: 'Cool chart to visualize and track expenses.',
         title: 'Expenses chart component'
     },
     {
@@ -107,19 +107,19 @@ export const PROJECTS = [
     {
         image: news,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
+        description: 'Find the latest technological news on this website',
         title: 'News homepage'
     },
     {
         image: newsletter,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
+        description: 'Sign-up form with validation and success message.',
         title: 'Newsletter sign-up form'
     },
     {
         image: nft,
         technologies: ['HTML', 'CSS'],
-
+        description: 'Card component showcasing NFT futuristic art.',
         title: 'NFT preview card'
     },
     {
@@ -131,13 +131,13 @@ export const PROJECTS = [
     {
         image: product,
         technologies: ['HTML', 'CSS'],
-
+        description: 'Card showcasing perfume with price and add to cart button.',
         title: 'Product preview card'
     },
     {
         image: qr,
         technologies: ['HTML', 'CSS'],
-
+        description: 'Simple card component with QR.',
         title: 'QR code'
     },
     {
@@ -167,13 +167,13 @@ export const PROJECTS = [
     {
         image: result,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
+        description: 'View results with cool hover effects.',
         title: 'Results summary component'
     },
     {
         image: room,
         technologies: ['React'],
-
+        description: 'Find modern ways to decorate your home with this responsive slider.',
         title: 'Room homepage'
     },
     {
