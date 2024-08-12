@@ -47,7 +47,7 @@ export const PROJECTS = [
     {
         image: blogr,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'A modern blog publishing platform',
+        description: 'A modern blog publishing platform.',
         title: 'Blogr landing page'
     },
     {
@@ -71,7 +71,7 @@ export const PROJECTS = [
     {
         image: domTodo,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Photorealistic to-do device',
+        description: 'Photorealistic to-do device.',
         title: 'DOM To-do'
     },
     {
@@ -101,13 +101,13 @@ export const PROJECTS = [
     {
         image: iCodeThis,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
-        title: '166 front-end projects'
+        description: 'Portfolio with 166 front-end completed challenges!',
+        title: '166 Front-end Challenges'
     },
     {
         image: news,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Find the latest technological news on this website',
+        description: 'Find the latest technological news on this website.',
         title: 'News homepage'
     },
     {
@@ -143,7 +143,7 @@ export const PROJECTS = [
     {
         image: randomColor,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Random hexadecimal color generator with a cool button',
+        description: 'Random hexadecimal color generator with a cool button.',
         title: 'Random color generator'
     },
     {
@@ -161,7 +161,7 @@ export const PROJECTS = [
     {
         image: restaurantMin,
         technologies: ['React', 'Tailwind', 'Framer Motion'],
-        description: 'Modern restaurant landing page',
+        description: 'Modern restaurant landing page.',
         title: 'Restaurant'
     },
     {
@@ -179,25 +179,25 @@ export const PROJECTS = [
     {
         image: socialProof,
         technologies: ['HTML', 'CSS'],
-
+        description: 'Fully responsive social proof rating and comments section.',
         title: 'Social proof section'
     },
     {
         image: social,
         technologies: ['HTML', 'CSS', 'JavaScript'],
-
-        title: 'Social media dashboard with theme switcher'
+        description: 'Followers count dashboard with theme switcher.',
+        title: 'Social Media Dashboard'
     },
     {
         image: stats,
         technologies: ['HTML', 'CSS'],
-
-        title: 'Stats preview card'
+        description: 'Responsive stats card.',
+        title: 'Stats Preview Card'
     },
     {
         image: timeTracker,
         technologies: ['React'],
-
+        description: 'Organize your time with daily, weekly, and monthly stats.',
         title: 'Time tracking dashboard'
     },
     {
@@ -209,13 +209,13 @@ export const PROJECTS = [
     {
         image: tribu,
         technologies: ['HTML', 'CSS'],
-        description: 'Marcus Aurelius tribute page',
+        description: 'Marcus Aurelius tribute page.',
         title: 'Tribute Page'
     },
     {
         image: vercel,
         technologies: ['Next.js','TypeScript'],
-        description: 'Full-stack dashboard web application form the official Next.js documentation',
+        description: 'Full-stack dashboard web application form the official Next.js documentation.',
         title: 'Vercel Official Project'
     }
 ]
