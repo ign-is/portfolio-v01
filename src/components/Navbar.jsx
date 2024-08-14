@@ -28,7 +28,7 @@ const Navbar = ({navSection, setNavSection}) => {
                 >
                     <a 
                         href="#home"
-                        className={`${navSection == 'home' ? color : ''}`} 
+                        className={`${navSection == 'home' ? color : ''} nav-link`} 
                     >
                         Home
                     </a>
@@ -40,7 +40,7 @@ const Navbar = ({navSection, setNavSection}) => {
                 >
                     <a 
                         href="#projects"
-                        className={`${navSection == 'projects' ? color : ''}`} 
+                        className={`${navSection == 'projects' ? color : ''} nav-link`} 
                     >
                         Projects
                     </a>
@@ -52,7 +52,7 @@ const Navbar = ({navSection, setNavSection}) => {
                 >
                     <a 
                         href="#contact"
-                        className={`${navSection == 'contact' ? color : ''}`} 
+                        className={`${navSection == 'contact' ? color : ''} nav-link`} 
                     >
                         Contact
                     </a>
