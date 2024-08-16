@@ -22,8 +22,8 @@ const ProjectCard = ({ project }) => {
                 <div className="code-web">
                     {/* <div className="code btn"><span><RiGithubLine /> code</span></div>
                     <div className="live btn"><span><RiLinksLine /> preview</span></div>                 */}
-                    <a className="code btn" target="_blank" href={project.github}><span><RiGithubLine /> code</span></a>
-                    <a className="live btn" target="_blank" href={project.demo}><span><RiLinksLine /> live demo</span></a>    
+                    <a className="code btn" target="_blank" rel="noopener noreferrer" role="link" href={project.github}><span><RiGithubLine /> code</span></a>
+                    <a className="live btn" target="_blank" rel="noopener noreferrer" role="link" href={project.demo}><span><RiLinksLine /> live demo</span></a>    
                 </div>
             </div>
         </div>
