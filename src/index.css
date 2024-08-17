@@ -50,7 +50,7 @@ nav ul li {
   transition:  all 150ms ease-in;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   color: rgb(129, 141, 167);
   font-weight: 500;
@@ -118,7 +118,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 35px;
+  /* padding-top: 35px; */
 }
 
 .header h1 {
@@ -235,8 +235,10 @@ a {
   gap: 30px;
 }
 .card {
-  height: 150px;
-  width: 90px;
+  /* height: 150px;
+  width: 90px; */
+  height: 200px;
+  width: 120px;
   border: 2px solid rgb(250, 249, 251);
   border-radius: 12px;
   position: relative;
@@ -249,30 +251,33 @@ a {
 }
 
 .inner-card {
-  height: 150px;
-  width: 90px;
+  /* height: 150px;
+  width: 90px; */
+  height: 200px;
+  width: 120px;
   border: 2px solid rgb(252,216,135);
   border-radius: 12px;
   position: absolute;
   top: -7px;
   right: -7px;
-  color: rgb(252,216,135);
+  /* color: rgb(252,216,135); */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 2.5rem;
 }
 
-.inner-card,
+/* .inner-card,
 .inner-card-box {
   box-shadow: 0px 0px 10px 0px rgba(252,216,135,0.5);
-}
+} */
 
 .inner-card > h4 {
-  margin-top: 4px;
+  margin-top: 5px;
   font-size: 0.8rem;
-  text-shadow: 0px 0px 10px rgba(252,216,135,0.8);
+  /* text-shadow: 0px 0px 10px rgba(252,216,135,0.8); */
 }
 
 /* .inner-card svg {
@@ -289,7 +294,8 @@ a {
 }
 
 .inner-card-box {
-  border-color: rgb(252,216,135);
+  /* border-color: rgb(252,216,135); */
+  /* border-color: red; */
 }
 
 .card-top-left,
@@ -331,10 +337,17 @@ a {
   margin: 0 auto;
 }
 
+#projects h1 {
+  padding-top: 18px;
+  /* padding-bottom: 0px; */
+  margin-bottom: 10px;
+}
+
 .container-blue {
   background-color: rgba(48, 51, 86, 0.2);
   width: fit-content;
-  height: 68vh;
+  /* height: 68vh; */
+  height: 73vh;
   border-radius: 3px;
   padding: 20px;
   clip-path: polygon(0 40px,40px 0,100% 0,100% calc(100% - 40px),calc(100% - 40px) 100%,0 100%);
@@ -342,7 +355,7 @@ a {
   grid-template-columns: 590px 590px;
   gap: 50px;
   overflow-y: scroll;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* width */
@@ -445,22 +458,138 @@ a {
   height: 330px;
   display: flex;
   /* align-items: flex-start; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   /* margin-top: 20px;
   margin-bottom: 20px; */
 }
 
+
+.React { 
+  color: rgb(0, 216, 255);
+}
+
+.react-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 216, 255,0.5);
+  border-color: rgb(0, 216, 255);
+}
+
+.react-text-shadow {
+  text-shadow: 0px 0px 10px rgba(0, 216, 255,0.8);
+}
+
+.TypeScript {
+  color: rgb(49, 120, 198);
+}
+
+.typescript-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(49, 120, 198,0.5);
+  border-color: rgb(49, 120, 198);
+}
+
+.typescript-text-shadow {
+  text-shadow: 0px 0px 10px rgba(49, 120, 198,0.8);
+}
+
+.Tailwind {
+  color: rgb(56, 189, 248);
+}
+
+.tailwind-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(56, 189, 248,0.5);
+  border-color: rgb(56, 189, 248);
+}
+
+.tailwind-text-shadow {
+  text-shadow: 0px 0px 10px rgba(56, 189, 248,0.8);
+}
+
+.HTML { 
+  color: rgb(239, 101, 42);  
+  /* color: #e34f26; */
+}
+
+.html-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(239, 101, 42,0.5);
+  border-color: rgb(239, 101, 42);
+}
+
+.html-text-shadow {
+  text-shadow: 0px 0px 10px rgba(239, 101, 42,0.8);
+}
+
+.CSS { 
+  color: rgb(12, 115, 184); 
+}
+
+.css-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(12, 115, 184,0.5);
+  border-color: rgb(12, 115, 184);
+}
+
+.css-text-shadow {
+  text-shadow: 0px 0px 10px rgba(12, 115, 184,0.8);
+}
+
+.Framer { 
+  color: rgb(173, 3, 255);
+}
+
+.framer-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(173, 3, 255,0.5);
+  border-color: rgb(173, 3, 255);
+}
+
+.framer-text-shadow {
+  text-shadow: 0px 0px 10px rgba(173, 3, 255,0.8);
+}
+
+.JavaScript{ 
+  color: rgb(240, 219, 79);
+}
+
+.javascript-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(240, 219, 79,0.5);
+  border-color: rgb(240, 219, 79);
+}
+
+.javascript-text-shadow {
+  text-shadow: 0px 0px 10px rgba(240, 219, 79,0.8);
+}
+
+.Next{ 
+  color: rgb(255, 255, 255);
+}
+
+.next-card-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255,0.5);
+  border-color: rgb(255, 255, 255);
+}
+
+.next-text-shadow {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255,0.8);
+}
+
+
 .technologies {
   display: flex;
   gap: 10px;
-  color: rgb(255, 49, 49);
-  text-shadow: -1px -1px 3px rgb(255, 49, 49);
+  /* color: rgb(255, 49, 49); */
+  /* text-shadow: -1px -1px 3px rgb(255, 49, 49); */
+  /* color: #f0db4f; */
+  color: #fff;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin-top: 5px;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 20px
 }
 
 .code-web {
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -475,9 +604,11 @@ a {
   border-top: 2px solid rgb(255, 49, 49);
   border-bottom: 2px solid rgb(255, 49, 49);
   color: rgb(255, 49, 49);
-  text-shadow: -1px -1px 5px rgb(255, 49, 49);
+  text-shadow: -1px -1px 2px rgb(255, 49, 49, 0.8);
   text-align: center;
   text-transform: uppercase;
+  /* box-shadow: 0px 2px 4px 0px rgba(255, 49, 49,0.2),0px -2px 4px 0px rgba(255, 49, 49,0.2); */
+  /* background-color: rgba(255, 49, 49,0.05); */
 }
 
 .btn {
@@ -491,7 +622,10 @@ a {
   justify-content: center;
   cursor: pointer;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
+
 .btn:before {
   content: "";
   position: absolute;
@@ -499,6 +633,7 @@ a {
   background: rgb(255, 49, 49);
   clip-path: polygon(0 12px,12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px,2px  calc(12px + 0.83px),2px calc(100% - 2px),calc(100% - 12px - 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 12px - 0.83px),calc(100% - 2px) 2px,calc(12px + 0.83px) 2px,2px calc(12px + 0.83px));
 
+  overflow: hidden;
 }
 
 .btn span {
@@ -514,6 +649,7 @@ a {
   width: 178px;
   height: 38px;
   overflow: hidden;
+  /* background-color: blue; */
   clip-path: polygon(0 12px,12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);
 
 }
@@ -526,5 +662,6 @@ a {
 .btn:hover span {
   background-color: rgba(255, 49, 49, 0.1);
 }
+
 
 
