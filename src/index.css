@@ -17,6 +17,12 @@ body {
   font-family: "Orbitron", sans-serif;
 }
 
+input,
+span,
+textarea {
+  font-family: "Orbitron", sans-serif;
+}
+
 .container-dots {
   height: 100vh;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='34' height='34' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(71, 82, 91,0)'/%3E%3Ccircle cx='20' cy='20' r='2' fill='rgba(71, 82, 91,0.3)'/%3E%3Cpath d='M18 20aInfinityInfinity 0 0 0InfinityNaNaInfinityInfinity 0 0 0-InfinityNaN' fill='rgba(236, 201, 75,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
@@ -293,10 +299,10 @@ nav ul li {
   border-radius: 3px;
 }
 
-.inner-card-box {
+/* .inner-card-box { */
   /* border-color: rgb(252,216,135); */
   /* border-color: red; */
-}
+/* } */
 
 .card-top-left,
 .inner-card-top-left {
@@ -665,3 +671,238 @@ nav ul li {
 
 
 
+/* Contact */
+#contact {
+  height: 500px;
+  width: 400px;
+}
+#contact .contact-header {
+  color: aqua;
+  font-size: 3rem;
+}
+
+.form-container {
+  border-left: 1px solid aqua;
+  border-right: 1px solid aqua;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.shape-top-right {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 150px;
+  height: 30px;
+  /* background-color: rgba(0, 255, 255, 0.092); */
+}
+
+.shape-top-top {
+  width: 150px;
+  height: 1px;
+  background-color: aqua;
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+
+.shape-top-left {
+  width: 1px;
+  height: 20px;
+  background-color: aqua;
+  position: absolute;
+  top: 2px;
+  right: 186px;
+  transform: rotate(45deg);
+}
+
+.shape-top-right-line {
+  width: 1px;
+  height: 40px;
+  background-color: aqua;
+  position: absolute;
+  right: 14px;
+  bottom: -8px;
+  transform: rotate(130deg);
+}
+
+
+
+
+.left-bar,
+.right-bar {
+  height: 180px;
+  width: 5px;
+  background-color: aqua;
+  position: absolute;
+  top: 25%;
+}
+
+.left-bar {
+  left: 0px;
+}
+
+.right-bar {
+  right: 0px;
+}
+
+.triangle-left-bottom {
+  width: 0;
+  height: 0;
+  border-top: 5px solid aqua;
+  border-right: 5px solid transparent;
+  position: absolute;
+  bottom: -4px;
+}
+
+.triangle-left-top {
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid aqua;
+  border-right: 5px solid transparent;
+  position: absolute;
+  top: -4px;
+}
+
+.triangle-right-top {
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid aqua;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: -4px;
+}
+
+.triangle-right-bottom {
+  width: 0;
+  height: 0;
+  border-top: 5px solid aqua;
+  border-left: 5px solid transparent;
+  position: absolute;
+  bottom: -4px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+form label:last-of-type {
+  position: relative;
+  /* width: 300px; */
+  width: 100%;
+  height: 100px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+form label:first-of-type,
+form label:nth-of-type(2) {
+  position: relative;
+  height: 40px;
+  /* width: 300px; */
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+form label:first-of-type:before,
+form label:nth-of-type(2):before,
+form label:last-of-type:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* clip-path: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%,0 0,2px  2px ,2px calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(16px + 0.83px),calc(100% - 16px - 0.83px) 2px,2px 2px); */
+  clip-path: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%,0 0,1px  1px ,1px calc(100% - 1px),calc(100% - 1px) calc(100% - 1px),calc(100% - 1px) calc(16px + 0.83px),calc(100% - 16px - 0.83px) 1px,1px 1px);
+
+  /* color: white; */
+  background-color: blue;
+
+  /* z-index: 1; */
+}
+
+form input {
+  /* z-index: 3; */
+  width: 280px;
+  height: 40px;
+  /* background-color: violet; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+}
+
+::placeholder {
+  color: red;
+}
+
+/* code the carret later */
+
+textarea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+}
+
+.submit {
+  position: relative;
+  /* width: 150px;
+  height: 30px; */
+  width: 240px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.submit:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(255, 49, 49);
+  /* clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%,0 0,2px  2px ,2px calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(12px + 0.83px),calc(100% - 12px - 0.83px) 2px,2px 2px);
+  clip-path: polygon(0 0,100% 0,100% 100%,24px 100%,0 calc(100% - 24px),0 0,2px  2px ,2px calc(100% - 24px - 0.83px),calc(24px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) 2px,2px 2px); */
+  /* clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,2px  2px ,2px calc(100% - 24px - 0.83px),calc(24px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(24px + 0.83px),calc(100% - 24px - 0.83px) 2px,2px 2px); */
+  overflow: hidden;
+
+  /* clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,2px  2px ,2px calc(100% - 24px - 0.83px),calc(24px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(24px + 0.83px),calc(100% - 24px - 0.83px) 2px,2px 2px);
+  clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px),0 0,2px  2px ,2px calc(100% - 12px - 0.83px),calc(12px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(12px + 0.83px),calc(100% - 12px - 0.83px) 2px,2px 2px);
+   */
+/* clip-path: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%, 24px 100%,0 calc(100% - 12px),0 0,2px  2px ,2px calc(100% - 12px - 0.83px),calc(24px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(12px + 0.83px),calc(100% - 12px - 0.83px) 2px,2px 2px); */
+clip-path: polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px),0 0,2px  2px ,2px calc(100% - 20px - 0.83px),calc(20px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(20px + 0.83px),calc(100% - 20px - 0.83px) 2px,2px 2px);
+}
+
+.submit span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.submit:hover span {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.418);
+
+  clip-path: polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+}
