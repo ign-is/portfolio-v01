@@ -29,13 +29,23 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <h1 className="contact-header">CONTACT</h1>
+            {/* <h1 className="contact-header">CONTACT</h1> */}
             <div className="form-container">
+
+                <div className="shape-message">
+                    <div className="shape-message-box-top"></div>
+                    <div className="shape-message-box-middle"></div>
+                    <div className="shape-message-box-bottom"></div>
+                    <h3>LEAVE ME A MESSAGE</h3>
+                </div>
+
                 <div className="shape-top-right">
                     <div className="shape-top-top"></div>
                     <div className="shape-top-left"></div>
                     <div className="shape-top-right-line"></div>
+                    <div className="left-line"></div>
                 </div>
+
                 <div className="left-bar">
                     <div className="triangle-left-top"></div>
                     <div className="triangle-left-bottom"></div>
@@ -44,6 +54,14 @@ const Contact = () => {
                     <div className="triangle-right-top"></div>
                     <div className="triangle-right-bottom"></div>
                 </div>
+
+                <div className="shape-bottom-right">
+                    <div className="shape-bottom-bottom"></div>
+                    <div className="shape-bottom-bottom-right"></div>
+                    <div className="shape-bottom-left"></div>
+                    <div className="left-line-bottom"></div>
+                </div>
+
                 <form 
                     ref={formRef}
                     onSubmit={handleSubmit}
@@ -76,7 +94,7 @@ const Contact = () => {
                             cols={38}
                             value={form.message}
                             onChange={handleChange}
-                            placeholder="LEAVE A MESSAGE"    
+                            placeholder="MESSAGE"    
                         >
                         </textarea>
                     </label>
