@@ -1,4 +1,9 @@
 import React, { useRef, useState } from "react";
+import { FaBarcode } from "react-icons/fa";
+
+const current = new Date();
+// const day = current.toLocaleString('default', { day: 'long' });
+const date = `${current.getFullYear()}`
 
 const Contact = () => {
     const formRef = useRef();
@@ -60,8 +65,15 @@ const Contact = () => {
                     <div className="shape-bottom-bottom-right"></div>
                     <div className="shape-bottom-left"></div>
                     <div className="left-line-bottom"></div>
+                    <FaBarcode className="barcode"/>
+                    <FaBarcode className="barcode-two"/>
                 </div>
+                <p className="date-form">
+                    {date}
+                </p>
 
+                {/* <h4>Fill out the form with your name and email.</h4>
+                <h4>I will contact you shortly to arrage to talk.</h4> */}
                 <form 
                     ref={formRef}
                     onSubmit={handleSubmit}
