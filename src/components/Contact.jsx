@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
+import Globe from "react-globe.gl";
 import { FaBarcode } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 const current = new Date();
 // const day = current.toLocaleString('default', { day: 'long' });
@@ -25,12 +27,55 @@ const Contact = () => {
         })
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // setLoading(true);
-        console.log(form)
+    // Service ID
+    // service_cb6kofp
 
+const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.send(
+            'service_cb6kofp',
+            'template_zp6ln0m',
+            {
+                from_name: form.name,
+                to_name: "Igna Dev",
+                from_email: form.email,
+                to_email: "igna.dev.contact01@gmail.com",
+                message: form.message,
+            },
+            'mzWpkOwjkTJARrNlM'
+        ).then(
+            () => {
+            setLoading(false);
+            alert("Thank you. I will get back to you as soon as possible.");
+
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+            });
+            },
+            (error) => {
+            setLoading(false);
+            console.error(error);
+
+            alert("Ahh, something went wrong. Please try again.");
+            }
+        );
     }
+
+    // Gen random data
+    const N = 20;
+    const arcsData = [...Array(N).keys()].map(() => ({
+        startLat: (Math.random() - 0.5) * 180,
+        startLng: (Math.random() - 0.5) * 360,
+        endLat: (Math.random() - 0.5) * 180,
+        endLng: (Math.random() - 0.5) * 360,
+        // color: [['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)], ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]]
+        // color: [['cyan', 'blue', 'blue', 'cyan'][Math.round(Math.random() * 3)], ['cyan', 'blue', 'cyan', 'cyan'][Math.round(Math.random() * 3)]]
+        color: [['cyan', 'white', 'cyan', 'cyan'][Math.round(Math.random() * 3)], ['white', 'cyan', 'cyan', 'cyan'][Math.round(Math.random() * 3)]]
+    }));
 
     return (
         <section id="contact">
@@ -88,7 +133,7 @@ const Contact = () => {
                             placeholder="NAME"    
                         />
                     </label>
-                    <label htmlFor="name">
+                    <label htmlFor="email">
                         <input 
                             type="email" 
                             name="email"
@@ -120,6 +165,35 @@ const Contact = () => {
                         </span>
                     </button>
                 </form>
+            </div>
+            
+            <div className="world-background">
+                <div className="world-container">
+                    <Globe 
+                        height={570}
+                        width={570}
+                        backgroundColor='rgba(0,0,0,0)'
+                        //  backgroundColor='rgba(45, 48, 84, 0.4)'
+                        backgroundImageOpacity={1}
+                        showAtmosphere
+                        showGraticules
+                        //  globeImageUrl='//unpkg.com/three-globe/example/img/earth-night.jpg'
+                        globeImageUrl='//unpkg.com/three-globe/example/img/earth-dark.jpg'
+            
+                        //  atmosphereColor='blue'
+                        atmosphereColor='cyan'
+
+                        atmosphereAltitude={0.10}
+            
+                        arcsData={arcsData}
+                        arcColor={'color'}
+                        arcDashLength={() => Math.random()}
+                        arcDashGap={() => Math.random()}
+                        arcDashAnimateTime={() => Math.random() * 4000 + 500}
+                    />
+                </div>
+                <div className="top-background"></div>
+                <div className="bottom-background"></div>
             </div>
         </section>
     )
