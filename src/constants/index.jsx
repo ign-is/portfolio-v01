@@ -38,6 +38,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { TbBrandTypescript } from "react-icons/tb";
+import { SiThreedotjs } from "react-icons/si";
 
 export const CARDS = [
     {
@@ -95,6 +96,13 @@ export const CARDS = [
         textShadow: 'next-text-shadow',
         icon: <RiNextjsLine />,
         techName: 'Next.js'
+    },
+    {
+        textColor: 'Next',
+        boxShadow: 'next-card-shadow',
+        textShadow: 'next-text-shadow',
+        icon: <SiThreedotjs />,
+        techName: 'Three.js'
     }
 ]
 
